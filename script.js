@@ -81,10 +81,7 @@ function updateCurrentText() {
 // Get cards from local storage
 function getCardsData() {
   const cards = JSON.parse(localStorage.getItem('cards'));
-  return cards === null ? [{
-    question: 'Who am I?',
-    answer: 'GHANA'
-  }] : cards;
+  return cards === null ? [] : cards;
 }
 
 // Add card to local storage
